@@ -1,0 +1,20 @@
+﻿<Window x:Class="Pinger.View.PingerShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Pinger.View"
+        mc:Ignorable="d"
+        Title="Pinger" Height="300" Width="400">
+    <Grid>
+        <ListView Margin="10" Name="MainListView">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Host" Width="120"></GridViewColumn>
+                    <GridViewColumn Header="IP" Width="80"></GridViewColumn>
+                    <GridViewColumn Header="Status" Width="80"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
